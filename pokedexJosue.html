@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex de Josué</title>
+    <link rel="stylesheet" href="./pokedexJosue.css">
+
+    <section class="fondo" id="fondoRandom"></section>
+</head>
+
+
+<body>
+
+    <header>
+            <div id= "logo">
+                <div class="logoContenedor">
+                </div>
+            </div>
+    </header>
+
+    <div class="container">
+        <div class="pokedex">
+            <div class="pantallaIzquierda">
+                <div class="pokeNombre">
+                    <P id="pokeNombre">SIN DATOS</P>
+                </div>
+                <div class="pokeNumero">
+                    <p>no. <span id="pokeNumero">0</span></p>
+                </div>
+                <div class="pokeImagen">
+                        <img src="./Imágenes/pokebola.png" alt="Pokemon" id="pokeImagen" class="sprite" width="50%" height="10%">                    
+                </div>
+                <div class="controlesImagen">
+                    <div class="generoPokeImagen" onclick="genderPokemon()">
+                        <p class="controlBotones">&#9892;</p>
+                    </div>
+                    <div class="shinyPokeImagen" onclick="shinyPokemon()">
+                        <p class="shinyText">SHINY</p>
+                    </div>
+                    <div class="controlPokeImagen" onclick="reversePokemon()">
+                        <p class="controlBotones">&#x21ba;</p>
+                    </div>
+                </div>
+                <div class="pokeDescripcion">
+                    <p>Experiencia base: <span id="pokeExperiencia">0 </span> <span>exp</span></p>
+                    <p>Peso: <span id="pokePeso">0 </span><span>kg</span></p>
+                    <p>Altura: <span id="pokeAltura">0 </span><span>m</span> </p>
+                </div>
+            </div>
+
+            <div class="bisagra">
+                <div class="pasador"></div>
+                <div class="separador1"></div>
+                <div class="separador2"></div>
+                <div class="separador3"></div>
+                <div class="separador4"></div>
+            </div>
+
+            <div class="pantallaDerecha">
+
+                <div class="bloque1">
+                    <div class="stats">
+                        <p>ESTADÍSTICAS BASE</p>
+                        <p><span id="stat1">Stat 1</span><span>...........................................</span> <span id="stat1Valor">0</span></p>
+                        <p><span id="stat2">Stat 2</span><span>....................................</span><span id="stat2Valor">0</span></p>
+                        <p><span id="stat3">Stat 3</span> <span>................................</span><span id="stat3Valor">0</span></p>
+                        <p><span id="stat4">Stat 4</span><span>.....................</span><span id="stat4Valor">0</span></p>
+                        <p><span id="stat5">Stat 5</span><span>..................</span><span id="stat5Valor">0</span></p>
+                        <p><span id="stat6">Stat 6</span><span>.....................................</span><span id="stat6Valor">0</span></p>
+                    </div>
+                    <div class="listaTipos">
+                        <div class="tituloTipos">
+                            <P>TIPO</P>
+                        </div>
+                        <div class="tipos">
+                            <div class="tipo1" id="botonTipo1">
+                                <p id="tipo1">TIPO 1</p>
+                            </div>
+                            <div class="sinClase" id="botonTipo2">
+                                <P id="tipo2">TIPO 2</P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bloque2">
+                    <div class="numeroEvo">
+                        <p class="evoTexto">I</p>
+                        <p class="evoTexto">II</p>
+                        <p class="evoTexto">III</p>
+                    </div>
+                    <div class="evoluciones">
+                        <div class="evolucion">
+                            <img src="./Imágenes/pokebola.png" alt="Pokemon" id="evolucion1" width=100px height=100px class="miniPokeBola">
+                        </div>
+                        <div class="evolucion">
+                            <img src="./Imágenes/pokebola.png" alt="Pokemon" id="evolucion2" width=100px height=100px class="miniPokeBola">
+                        </div>
+                        <div class="evolucion">
+                            <img src="./Imágenes/pokebola.png" alt="Pokemon" id="evolucion3" width=100px height=100px class="miniPokeBola">
+                        </div>
+                    </div>
+                    <div class="nombreEvoluciones">
+                        <div class="nombreEvolucion">
+                            <p id="nombreEvolucion1"> DREAM WORLD </p>
+                        </div>
+                        <div class="nombreEvolucion">
+                            <P id="nombreEvolucion2"> HOME</P>
+                        </div>
+                        <div class="nombreEvolucion">
+                            <P id="nombreEvolucion3">OFFICIAL ARTWORK</P>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bloque3">
+                    <div class="entradaBuscar">
+                            <input type="text" placeholder="Nombre" id="pokeBusqueda" name="pokeBusqueda">
+                            <button onclick="fetchPokemon()" class="buscar">BUSCAR</button>
+                            
+                    </div>
+                </div>
+                
+                <div class="bloque4">
+                    <div class="ataques">
+                        <div class="grupo1">
+                            <div class="ataqueNombre">
+                             <p id="nombreAtaque">Nombre</p>
+                            </div>
+                            <div class="ataqueTipo">
+                            <p>Lo aprende en nivel: <span id="tipoAtaque">0</span></p>
+                        </div>
+                        </div>
+                        <div class="grupo2">
+                            <div class="ataqueEstadisticas">
+                            <p>Método de aprendizaje: <span id="estadisticasAtaque">0</span></p>
+                            </div>
+                            <div class="ataqueEstatus">
+                            <p>Primera aparición: <span id="estatusAtaque">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ataqueControles">
+                        <div class="flecha1" id="flecha1" onclick="ataqueArribaPokemon();">&#x27A4;</div>
+                        <div class="flecha2" id="flecha2" onclick="ataqueAbajoPokemon();">&#x27A4;</div>
+                    </div>
+                </div>
+
+                <div class="bloque5">
+                    <div class="menuNumeros">
+                        <div class="boton" onclick="fetchPokeAtras()">&#60;</div>
+                        <div class="buscaNumero">
+                                <input type="number" id="numeroPokemon" placeholder="0">
+                        </div>
+                        <div class="boton" onclick="fetchPokeAdelante()">&#62;</div>
+                    </div>
+                        <div>
+                            <button class="buscarNumero" id="pokeBusquedaNumero" onclick="fetchPokemonNumber()">BUSCAR</button>
+                        </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <script src="./pokedexJosue.js"></script>
+
+</footer>
+
+</html>
+
