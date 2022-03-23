@@ -81,6 +81,10 @@ const fetchPokemon = () => {
                 pokeEvo1("./Imágenes/pokebola.png")
             }
 
+            if(pokeImgEvo1 != null){
+                document.getElementById("nombreEvolucion1").innerHTML = "DREAM WORLD";
+            }
+
             let pokeImgEvo2 = data.sprites.other.home.front_default;
             pokeEvo2(pokeImgEvo2);
 
@@ -88,11 +92,19 @@ const fetchPokemon = () => {
                 pokeEvo2("./Imágenes/pokebola.png")
             }
 
+            if(pokeImgEvo2 != null){
+                document.getElementById("nombreEvolucion2").innerHTML = "HOME";
+            }
+
             let pokeImgEvo3 = data.sprites.other["official-artwork"].front_default
             pokeEvo3(pokeImgEvo3);
 
             if(pokeImgEvo3 == null){
                 pokeEvo3("./Imágenes/pokebola.png")
+            }
+
+            if(pokeImgEvo3 != null){
+                document.getElementById("nombreEvolucion3").innerHTML = "OFFICIAL ARTWORK";
             }
 
             let pokeTipo1 = data.types[0].type.name;
@@ -236,6 +248,10 @@ const fetchPokemonNumber = () => {
                 pokeEvo1("./Imágenes/pokebola.png")
             }
 
+            if(pokeImgEvo1 != null){
+                document.getElementById("nombreEvolucion1").innerHTML = "DREAM WORLD";
+            }
+
             let pokeImgEvo2 = data.sprites.other.home.front_default;
             pokeEvo2(pokeImgEvo2);
 
@@ -243,11 +259,19 @@ const fetchPokemonNumber = () => {
                 pokeEvo2("./Imágenes/pokebola.png")
             }
 
+            if(pokeImgEvo2 != null){
+                document.getElementById("nombreEvolucion2").innerHTML = "HOME";
+            }
+
             let pokeImgEvo3 = data.sprites.other["official-artwork"].front_default
             pokeEvo3(pokeImgEvo3);
 
             if(pokeImgEvo3 == null){
                 pokeEvo3("./Imágenes/pokebola.png")
+            }
+
+            if(pokeImgEvo3 != null){
+                document.getElementById("nombreEvolucion3").innerHTML = "OFFICIAL ARTWORK";
             }
 
             let pokeTipo1 = data.types[0].type.name;
@@ -388,6 +412,10 @@ const fetchPokeAdelante = () => {
                 pokeEvo1("./Imágenes/pokebola.png")
             }
 
+            if(pokeImgEvo1 != null){
+                document.getElementById("nombreEvolucion1").innerHTML = "DREAM WORLD";
+            }
+
             let pokeImgEvo2 = data.sprites.other.home.front_default;
             pokeEvo2(pokeImgEvo2);
 
@@ -395,11 +423,19 @@ const fetchPokeAdelante = () => {
                 pokeEvo2("./Imágenes/pokebola.png")
             }
 
+            if(pokeImgEvo2 != null){
+                document.getElementById("nombreEvolucion2").innerHTML = "HOME";
+            }
+
             let pokeImgEvo3 = data.sprites.other["official-artwork"].front_default
             pokeEvo3(pokeImgEvo3);
 
             if(pokeImgEvo3 == null){
                 pokeEvo3("./Imágenes/pokebola.png")
+            }
+
+            if(pokeImgEvo3 != null){
+                document.getElementById("nombreEvolucion3").innerHTML = "OFFICIAL ARTWORK";
             }
 
             let pokeTipo1 = data.types[0].type.name;
@@ -537,6 +573,10 @@ const fetchPokeAtras = () => {
                 pokeEvo1("./Imágenes/pokebola.png")
             }
 
+            if(pokeImgEvo1 != null){
+                document.getElementById("nombreEvolucion1").innerHTML = "DREAM WORLD";
+            }
+
             let pokeImgEvo2 = data.sprites.other.home.front_default;
             pokeEvo2(pokeImgEvo2);
 
@@ -544,11 +584,19 @@ const fetchPokeAtras = () => {
                 pokeEvo2("./Imágenes/pokebola.png")
             }
 
+            if(pokeImgEvo2 != null){
+                document.getElementById("nombreEvolucion2").innerHTML = "HOME";
+            }
+
             let pokeImgEvo3 = data.sprites.other["official-artwork"].front_default
             pokeEvo3(pokeImgEvo3);
 
             if(pokeImgEvo3 == null){
                 pokeEvo3("./Imágenes/pokebola.png")
+            }
+
+            if(pokeImgEvo3 != null){
+                document.getElementById("nombreEvolucion3").innerHTML = "OFFICIAL ARTWORK";
             }
 
             let pokeTipo1 = data.types[0].type.name;
