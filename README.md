@@ -6,6 +6,10 @@
   <img src="https://github.com/JosueDanieLB/JavaScriptJosueFrontEnd-Mision/blob/main/Im%C3%A1genes/pokeLogo.png">
 </p>
 
+<p align="center">
+  <img src="https://github.com/JosueDanieLB/JavaScriptJosueFrontEnd-Mision/blob/main/Im%C3%A1genes/JosueDex.jpg">
+</p>
+
 ### Presento mi versión del Pokedex al que bauticé como "JosuéDex". Está realizado en HTML, CSS y JavaScript con los recursos vistos en el programa de LaunchX. Este Pokedex tiene una vista móvil de hasta con un mínimo de 320px de ancho, y una vista web cuando la pantalla tiene un ancho mayor a 900px, con un máximo justamente de 900px.
 
 ### Me siento muy orgulloso de este Pokedex, ya que con mucho esfuerzo logré implementar las siguientes funciones, todo conectado a la API "PokeAPI":
