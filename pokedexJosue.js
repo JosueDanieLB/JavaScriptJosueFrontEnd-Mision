@@ -329,7 +329,7 @@ const fetchPokemonNumber = () => {
             let pokeAparece = data.moves[pokeConteoAtaque].version_group_details[0].version_group.name;
             document.getElementById("estatusAtaque").innerHTML = pokeAparece;
 
-            buscaPokemon = pokeNameNumber;
+            buscaPokemon = pokeNumber;
 
         }
     });
